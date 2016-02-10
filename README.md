@@ -1,7 +1,8 @@
 Financial market professionals are obsessed with prices. So much so that they often sign up to alerts on various asset classes that they follow
 in order to make a buy or sell decision when the price is at a level they feel is sensible to deal in.
 
-I've always loved following the gold price, as it gives an indication of how much faith investors have in monetary policy and central bankers.
+I've always loved following the gold price, as it gives an indication of how much faith investors have in monetary policy and central bankers. The rule of thumb in the markets is, the higher the gold price, the more shaky the world's monetary system and the more caution
+should be exercised. 
 
 This is a simply command line program I wrote that uses the Nokogiri gem to scrape the live gold price from a webpage and send a text to the
 user if the price goes beyond a certain boundary. The Twilio gem is used to send a text message once the gold price goes above or below
