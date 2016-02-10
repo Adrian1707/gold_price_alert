@@ -14,7 +14,7 @@
 
   @twilio = Twilio::REST::Client.new TWILIO_ACCOUNT_SID,TWILIO_AUTH_TOKEN
 
-  @price_outside_range = true
+  @price_inside_range = true
     def get_page
         @doc = Nokogiri::HTML(open("http://www.pmbull.com/gold-price/"))
     end
@@ -31,13 +31,13 @@
     end
 
     def check_price
-      if @gold_price < 1194 || @gold_price > 1195
+      if @gold_price < 1190 || @gold_price > 1200
         send_alert
-        @price_outside_range = false
+        @price_inside_range = false
       end
     end
 
-    while @price_outside_range
+    while @price_inside_range
       get_page
       get_gold_price
       check_price
