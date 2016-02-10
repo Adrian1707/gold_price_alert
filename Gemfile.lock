@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    builder (3.2.2)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.3)
+    mini_portile2 (2.0.0)
+    multi_xml (0.5.5)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
+    twilio (3.1.1)
+      builder (>= 2.1.2)
+      httparty (>= 0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  twilio
+
+BUNDLED WITH
+   1.10.6
