@@ -15,6 +15,7 @@
   @twilio = Twilio::REST::Client.new TWILIO_ACCOUNT_SID,TWILIO_AUTH_TOKEN
 
   @price_inside_range = true
+  
     def get_page
         @doc = Nokogiri::HTML(open("http://www.pmbull.com/gold-price/"))
     end

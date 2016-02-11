@@ -15,7 +15,6 @@ Do the same with your personal phone number as well.
 
 ```
 git clone https://github.com/Adrian1707/gold_price_alert
-cd gold_price_alert
 ruby gold_price_alert.rb
 Program runs until the gold price exits the range specified on line 34
 
